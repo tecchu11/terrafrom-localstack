@@ -1,6 +1,6 @@
 #!/bin/sh
 
-awslocal s3 mb s3://terraform-backend
+awslocal s3 mb s3://terraform-backend --region ap-northeast-1
 
 awslocal dynamodb create-table \
   --table-name terraform-locktable \
